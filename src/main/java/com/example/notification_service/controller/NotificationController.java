@@ -25,7 +25,7 @@ public class NotificationController {
         return emailNotificationService.getNotifications(recipientEmail);
     }
 
-    @GetMapping("/delete/{recipientEmail}")
+    @DeleteMapping("/delete/{recipientEmail}")
     public void deleteNotification(@PathVariable String recipientEmail) {
 
          emailNotificationService.getNotifications(recipientEmail);
